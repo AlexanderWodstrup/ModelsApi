@@ -10,7 +10,26 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
-Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "ModelsVueApp", "ModelsVueApp\ModelsVueApp.njsproj", "{3688C819-98E6-450D-810F-197D6A624A4E}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "modelsvue", "modelsvue\", "{BEFE6488-CB39-429B-ADE0-F0DF1899C067}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_52584"
+		Debug.AspNetCompiler.PhysicalPath = "modelsvue\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_52584\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_52584"
+		Release.AspNetCompiler.PhysicalPath = "modelsvue\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_52584\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "52584"
+		SlnRelativePath = "modelsvue\"
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,10 +41,10 @@ Global
 		{EBFBC57A-FCF9-467A-99AA-05C68D9EFB74}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EBFBC57A-FCF9-467A-99AA-05C68D9EFB74}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EBFBC57A-FCF9-467A-99AA-05C68D9EFB74}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3688C819-98E6-450D-810F-197D6A624A4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3688C819-98E6-450D-810F-197D6A624A4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3688C819-98E6-450D-810F-197D6A624A4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3688C819-98E6-450D-810F-197D6A624A4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEFE6488-CB39-429B-ADE0-F0DF1899C067}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEFE6488-CB39-429B-ADE0-F0DF1899C067}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEFE6488-CB39-429B-ADE0-F0DF1899C067}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEFE6488-CB39-429B-ADE0-F0DF1899C067}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
