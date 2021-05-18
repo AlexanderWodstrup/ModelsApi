@@ -46,7 +46,7 @@
         },
         methods: {
             async login() {
-                let url = "https://localhost:8080/api/account/login";
+                let url = "https://localhost:44368/api/account/login";
                 try {
                     let response = await fetch(url, {
                         method: "POST",
@@ -59,9 +59,10 @@
                     if (response.ok) {
                         let token = await response.json();
                         localStorage.setItem("token", token.jwt);
-                        this.credentials = JSON.parse(token.jwt.split(".")[1]);
+                        alert("Logged in");
+                        //this.credentials = JSON.parse(token.jwt.split(".")[1]);
                         this.jobs = this.getJobs();
-                        this.postJob();
+                        //this.postJob();
                         //Change view to some other component
                         // ...
                     } else {
@@ -73,7 +74,7 @@
                 return;
             },
             async getJobs() {
-                let response = await fetch("https://localhost:8080/api/jobs", {
+                let response = await fetch("https://localhost:44368/api/jobs", {
                     credentials: "include",
                     headers: {
                         Authorization: "Bearer " + localStorage.getItem("token"), "Content-Type": "application/json"
@@ -93,7 +94,7 @@
                     "location": "Aarhus Ø",
                     "comments": "Skal brug 2 modeller"
                 };
-                let response = await fetch("https://localhost:8080/api/jobs", {
+                let response = await fetch("https://localhost:44368/api/jobs", {
                     method: "POST",
                     body: JSON.stringify(data),
                     credentials: "include",
