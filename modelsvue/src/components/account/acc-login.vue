@@ -61,7 +61,7 @@
                         localStorage.setItem("token", token.jwt);
                         alert("Logged in");
                         //this.credentials = JSON.parse(token.jwt.split(".")[1]);
-                        this.jobs = this.getJobs();
+                        //this.jobs = this.getJobs();
                         //this.postJob();
                         //Change view to some other component
                         // ...
