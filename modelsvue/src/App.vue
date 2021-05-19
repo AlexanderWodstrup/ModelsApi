@@ -4,7 +4,8 @@
           <router-link to="/">Home</router-link> |
           <router-link to="/createmodel">Model</router-link> |
           <router-link to="/createmanager">Manager</router-link> |
-          <router-link to="/createjob">Jobs</router-link>
+          <router-link to="/createjob">New job</router-link> |
+          <router-link to="/jobs">Jobs</router-link>
       </div>
     <router-view />
   </div>
