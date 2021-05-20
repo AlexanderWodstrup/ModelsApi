@@ -1,16 +1,16 @@
 ﻿<template>
     <div class="viewjobs">
-        <jobs/>
+        <listJobs/>
     </div>
 </template>
 
 <script>
-    import jobs from "@/components/GetJobs.vue";
+    import listJobs from "@/components/GetJobs.vue";
 
     export default {
         name: "jobslist",
         components: {
-            jobs,
-        },
+            listJobs,
+        }
     };
 </script>

@@ -101,24 +101,25 @@
                            placeholder="Nationality" />
                 </div>
             </div>
-            <!--<div class="field">
+            <div class="field">
                 <label class="label">Height</label>
                 <div class="control">
-                    <input v-model="form.Height"
+                    <input v-model="form.height"
                            class="input"
                            type="number"
+                           step="0.01"
                            placeholder="Height" />
                 </div>
-            </div>-->
-            <!--<div class="field">
+            </div>
+            <div class="field">
                 <label class="label">ShoeSize</label>
                 <div class="control">
-                    <input v-model="form.ShoeSize"
+                    <input v-model="form.shoeSize"
                            class="input"
                            type="number"
                            placeholder="ShoeSize" />
                 </div>
-            </div>-->
+            </div>
             <div class="field">
                 <label class="label">HairColor</label>
                 <div class="control">
@@ -179,8 +180,8 @@
                     country: "string",
                     birthDate: "2021-05-18T14:46:34.626Z",
                     nationality: "string",
-                    //height: "decimal",
-                    //shoeSize: 0,
+                    height: 0.00,
+                    shoeSize: 0,
                     hairColor: "string",
                     eyeColor: "string",
                     comments: "string",
@@ -194,6 +195,8 @@
             async create() {
                 let url = "https://localhost:44368/api/Models";
                 try {
+                    this.form.height = parseFloat(this.form.height);
+                    this.form.shoeSize = parseFloat(this.form.shoeSize);
                     let response = await fetch(url, {
                         method: "POST",
                         body: JSON.stringify(this.form),

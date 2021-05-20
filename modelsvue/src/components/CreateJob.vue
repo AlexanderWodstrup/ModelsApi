@@ -20,15 +20,15 @@
                            placeholder="StartDate" />
                 </div>
             </div>
-            <!--<div class="field">
+            <div class="field">
                 <label class="label">Days</label>
                 <div class="control">
-                    <input v-model="form.Days"
+                    <input v-model="form.days"
                            class="input"
                            type="number"
                            placeholder="Days" />
                 </div>
-            </div>-->
+            </div>
             <div class="field">
                 <label class="label">Location</label>
                 <div class="control">
@@ -62,7 +62,7 @@
                 form: {
                     customer: "string",
                     startDate: "2021-05-18T14:46:34.626Z",
-                    //Days: 0,
+                    days: 0,
                     location: "string",
                     comments: "string"
                 },
@@ -74,6 +74,7 @@
             async create() {
                 let url = "https://localhost:44368/api/Jobs";
                 try {
+                    this.form.days = parseFloat(this.form.days);
                     let response = await fetch(url, {
                         method: "POST",
                         body: JSON.stringify(this.form),

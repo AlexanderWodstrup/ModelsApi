@@ -5,6 +5,9 @@ import Models from "../views/CreateModel.vue";
 import Managers from "../views/CreateManager.vue";
 import Jobs from "../views/CreateJob.vue";
 import ViewJobs from "../views/ViewJobs.vue";
+import EditJob from "../components/EditJob.vue";
+import AddModelToJob from "../components/AddModelToJob.vue";
+import AddExpense from "../components/AddExpense.vue";
 
 Vue.use(VueRouter);
 
@@ -33,7 +36,23 @@ const routes = [
         path: "/jobs",
         name: "Jobs",
         component: ViewJobs
+    },
+    {
+        path: "/editjobs/:id",
+        name: "EditJob",
+        component: EditJob
+    },
+    {
+        path: "/editjobs/:id/addmodel",
+        name: "AddModelToJob",
+        component: AddModelToJob
+    },
+    {
+        path: "/addexpense/:id",
+        name: "AddExpense",
+        component: AddExpense
     }
+
 ];
 
 const router = new VueRouter({
